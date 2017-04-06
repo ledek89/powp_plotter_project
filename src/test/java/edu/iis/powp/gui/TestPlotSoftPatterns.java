@@ -28,9 +28,11 @@ public class TestPlotSoftPatterns
 	 * @param context Application context.
 	 */
 	private static void setupPresetTests(Context context) {
-	    SelectTestFigureOptionListener selectTestFigureOptionListener = new SelectTestFigureOptionListener();
+	    SelectTestFigureOptionListener selectTestFigureOptionListener = new SelectTestFigureOptionListener(1);
+	    SelectTestFigureOptionListener selectTestSecFigureOptionListener = new SelectTestFigureOptionListener(2);
 		
-		context.addTest("Figure Joe 1", selectTestFigureOptionListener);	        
+		context.addTest("Figure Joe 1", selectTestFigureOptionListener);	
+		context.addTest("Figure Joe 2", selectTestSecFigureOptionListener);
 	}
 
 	/**
