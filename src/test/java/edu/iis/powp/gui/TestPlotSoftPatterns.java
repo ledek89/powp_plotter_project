@@ -28,9 +28,13 @@ public class TestPlotSoftPatterns
 	private static void setupPresetTests(Context context) {
 	    SelectTestFigureOptionListener selectTestFigureOptionListener = new SelectTestFigureOptionListener(1);
 	    SelectTestFigureOptionListener selectTestSecFigureOptionListener = new SelectTestFigureOptionListener(2);
-		
+	    SelectTestFigureOptionListener selectTestThFigureOptionListener = new SelectTestFigureOptionListener(3);
+	    SelectTestFigureOptionListener selectTestFourthFigureOptionListener = new SelectTestFigureOptionListener(4);
+	    
 		context.addTest("Figure Joe 1", selectTestFigureOptionListener);	
 		context.addTest("Figure Joe 2", selectTestSecFigureOptionListener);
+		context.addTest("Figure Joe 3", selectTestThFigureOptionListener);
+		context.addTest("Figure Joe 4", selectTestFourthFigureOptionListener);
 	}
 
 	/**

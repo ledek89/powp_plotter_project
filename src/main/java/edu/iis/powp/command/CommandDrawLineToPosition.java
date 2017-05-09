@@ -12,5 +12,10 @@ public class CommandDrawLineToPosition implements PlotterCommand {
 		driver.drawTo(x, y);
 
 	}
-
+	
+	public CommandDrawLineToPosition(int x, int y){
+		super();
+		this.x = x;
+		this.y = y;
+	}
 }

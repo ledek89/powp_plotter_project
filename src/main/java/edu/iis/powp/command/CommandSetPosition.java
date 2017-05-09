@@ -12,5 +12,10 @@ public class CommandSetPosition implements PlotterCommand {
 		driver.setPosition(x, y);
 		
 	}
-
+	
+	public CommandSetPosition(int x, int y){
+		super();
+		this.x = x;
+		this.y = y;
+	}
 }
